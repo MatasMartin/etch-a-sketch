@@ -1,7 +1,8 @@
 * {
     background-color: rgb(33, 43, 80);
     margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'VT323', 'Trebuchet MS', Arial, sans-serif;
+    overflow: hidden;
 }
 
 .top {
@@ -20,9 +21,10 @@
     margin: auto;
     height: 800px;
     width: 800px;
-    
-    
+    border:double 15px rgb(18, 24, 45);
     flex-wrap: wrap;
+
+    pointer-events: none;
 
 }
 
@@ -32,9 +34,10 @@
     box-sizing: border-box;
 }
 
-.square:hover {
+/* .square:hover {
+    
     background-color: black;
-}
+} */
 
 .footer {
     height: 8vh;
@@ -42,5 +45,40 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    color: rgb(72, 70, 80);
+    color: rgb(83, 81, 93);
+}
+
+#buttonAlert {
+    position: absolute;
+    left: 45.2%;
+    top: 48.4vh;
+    box-shadow: 10px 10px rgb(7, 8, 23);
+}
+
+#button {
+    font-weight: 550;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    border: dashed 5px rgb(18, 24, 45);
+    color: rgb(159, 161, 179);
+    padding: 5px 10px;
+    cursor: pointer;
+    
+}
+
+#button:hover {
+    background-color: rgb(27, 35, 65);
+}
+
+#buttonAlert.move {
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in-out;
+    transform: translateX(-970px);
+}
+
+#buttonAlert.moved:hover {
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: translateX(-845px); 
 }
